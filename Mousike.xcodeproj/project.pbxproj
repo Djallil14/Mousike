@@ -1,0 +1,485 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9D19259129C21E0B0024807D /* AngularGradient+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D19259029C21E0B0024807D /* AngularGradient+Extensions.swift */; };
+		9D57DD0929B7EFEA00EA6BD6 /* Interval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D57DD0829B7EFEA00EA6BD6 /* Interval.swift */; };
+		9DA6C20F29B27AD90089BA43 /* MousikeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA6C20E29B27AD90089BA43 /* MousikeApp.swift */; };
+		9DA6C21129B27AD90089BA43 /* MainHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA6C21029B27AD90089BA43 /* MainHomeView.swift */; };
+		9DA6C21329B27ADA0089BA43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DA6C21229B27ADA0089BA43 /* Assets.xcassets */; };
+		9DA6C21729B27ADA0089BA43 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DA6C21629B27ADA0089BA43 /* Preview Assets.xcassets */; };
+		9DA6C21F29B286340089BA43 /* Sunny.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9DA6C21D29B285E90089BA43 /* Sunny.otf */; };
+		9DA6C22229B2907A0089BA43 /* IntervalTrainingExercice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA6C22129B2907A0089BA43 /* IntervalTrainingExercice.swift */; };
+		9DA6C22529B2AA780089BA43 /* IntervalTrainingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA6C22429B2AA780089BA43 /* IntervalTrainingView.swift */; };
+		9DA6C22829B2ABF80089BA43 /* ExerciceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA6C22729B2ABF80089BA43 /* ExerciceView.swift */; };
+		9DA6C22B29B3DDB70089BA43 /* NoteRecognitionMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA6C22A29B3DDB70089BA43 /* NoteRecognitionMainView.swift */; };
+		9DA6C22E29B3DFE80089BA43 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA6C22D29B3DFE80089BA43 /* SettingsView.swift */; };
+		9DA6C23029B5C5040089BA43 /* AudioEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA6C22F29B5C5040089BA43 /* AudioEngine.swift */; };
+		9DA6C23329B5C5320089BA43 /* Notes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA6C23229B5C5320089BA43 /* Notes.swift */; };
+		9DA6C23529B5C5510089BA43 /* pianoInstrument.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = 9DA6C23429B5C5510089BA43 /* pianoInstrument.sf2 */; };
+		9DA6C23A29B5C9E00089BA43 /* ChordRecognitionMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA6C23929B5C9E00089BA43 /* ChordRecognitionMainView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9D19259029C21E0B0024807D /* AngularGradient+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AngularGradient+Extensions.swift"; sourceTree = "<group>"; };
+		9D57DD0829B7EFEA00EA6BD6 /* Interval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interval.swift; sourceTree = "<group>"; };
+		9DA6C20B29B27AD90089BA43 /* Mousike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mousike.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DA6C20E29B27AD90089BA43 /* MousikeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MousikeApp.swift; sourceTree = "<group>"; };
+		9DA6C21029B27AD90089BA43 /* MainHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHomeView.swift; sourceTree = "<group>"; };
+		9DA6C21229B27ADA0089BA43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9DA6C21429B27ADA0089BA43 /* Mousike.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Mousike.entitlements; sourceTree = "<group>"; };
+		9DA6C21629B27ADA0089BA43 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9DA6C21D29B285E90089BA43 /* Sunny.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Sunny.otf; path = "../../../Downloads/sunny-spells-font/Sunny.otf"; sourceTree = "<group>"; };
+		9DA6C21E29B286070089BA43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9DA6C22129B2907A0089BA43 /* IntervalTrainingExercice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalTrainingExercice.swift; sourceTree = "<group>"; };
+		9DA6C22429B2AA780089BA43 /* IntervalTrainingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalTrainingView.swift; sourceTree = "<group>"; };
+		9DA6C22729B2ABF80089BA43 /* ExerciceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciceView.swift; sourceTree = "<group>"; };
+		9DA6C22A29B3DDB70089BA43 /* NoteRecognitionMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteRecognitionMainView.swift; sourceTree = "<group>"; };
+		9DA6C22D29B3DFE80089BA43 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		9DA6C22F29B5C5040089BA43 /* AudioEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioEngine.swift; sourceTree = "<group>"; };
+		9DA6C23229B5C5320089BA43 /* Notes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notes.swift; sourceTree = "<group>"; };
+		9DA6C23429B5C5510089BA43 /* pianoInstrument.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = pianoInstrument.sf2; sourceTree = "<group>"; };
+		9DA6C23929B5C9E00089BA43 /* ChordRecognitionMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChordRecognitionMainView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9DA6C20829B27AD90089BA43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9D19258F29C21DF70024807D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9D19259029C21E0B0024807D /* AngularGradient+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9DA6C20229B27AD90089BA43 = {
+			isa = PBXGroup;
+			children = (
+				9DA6C20D29B27AD90089BA43 /* Mousike */,
+				9DA6C20C29B27AD90089BA43 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9DA6C20C29B27AD90089BA43 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9DA6C20B29B27AD90089BA43 /* Mousike.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9DA6C20D29B27AD90089BA43 /* Mousike */ = {
+			isa = PBXGroup;
+			children = (
+				9DA6C21E29B286070089BA43 /* Info.plist */,
+				9DA6C23429B5C5510089BA43 /* pianoInstrument.sf2 */,
+				9DA6C20E29B27AD90089BA43 /* MousikeApp.swift */,
+				9DA6C21029B27AD90089BA43 /* MainHomeView.swift */,
+				9DA6C23629B5C5BA0089BA43 /* Shared */,
+				9DA6C23129B5C5110089BA43 /* Services */,
+				9DA6C22329B2AA680089BA43 /* Features */,
+				9DA6C21229B27ADA0089BA43 /* Assets.xcassets */,
+				9DA6C21D29B285E90089BA43 /* Sunny.otf */,
+				9DA6C21429B27ADA0089BA43 /* Mousike.entitlements */,
+				9DA6C21529B27ADA0089BA43 /* Preview Content */,
+			);
+			path = Mousike;
+			sourceTree = "<group>";
+		};
+		9DA6C21529B27ADA0089BA43 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9DA6C21629B27ADA0089BA43 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9DA6C22329B2AA680089BA43 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				9DA6C23829B5C9C90089BA43 /* ChordRecognition */,
+				9DA6C22C29B3DFDB0089BA43 /* Settings */,
+				9DA6C22929B3DD9A0089BA43 /* NoteRecognition */,
+				9DA6C22629B2ABB00089BA43 /* IntervalTraining */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		9DA6C22629B2ABB00089BA43 /* IntervalTraining */ = {
+			isa = PBXGroup;
+			children = (
+				9DA6C22429B2AA780089BA43 /* IntervalTrainingView.swift */,
+				9DA6C22129B2907A0089BA43 /* IntervalTrainingExercice.swift */,
+				9DA6C22729B2ABF80089BA43 /* ExerciceView.swift */,
+			);
+			path = IntervalTraining;
+			sourceTree = "<group>";
+		};
+		9DA6C22929B3DD9A0089BA43 /* NoteRecognition */ = {
+			isa = PBXGroup;
+			children = (
+				9DA6C22A29B3DDB70089BA43 /* NoteRecognitionMainView.swift */,
+			);
+			path = NoteRecognition;
+			sourceTree = "<group>";
+		};
+		9DA6C22C29B3DFDB0089BA43 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				9DA6C22D29B3DFE80089BA43 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		9DA6C23129B5C5110089BA43 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9DA6C22F29B5C5040089BA43 /* AudioEngine.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9DA6C23629B5C5BA0089BA43 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				9D19258F29C21DF70024807D /* Extensions */,
+				9DA6C23729B5C5C70089BA43 /* Model */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		9DA6C23729B5C5C70089BA43 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9DA6C23229B5C5320089BA43 /* Notes.swift */,
+				9D57DD0829B7EFEA00EA6BD6 /* Interval.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9DA6C23829B5C9C90089BA43 /* ChordRecognition */ = {
+			isa = PBXGroup;
+			children = (
+				9DA6C23929B5C9E00089BA43 /* ChordRecognitionMainView.swift */,
+			);
+			path = ChordRecognition;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9DA6C20A29B27AD90089BA43 /* Mousike */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DA6C21A29B27ADA0089BA43 /* Build configuration list for PBXNativeTarget "Mousike" */;
+			buildPhases = (
+				9DA6C20729B27AD90089BA43 /* Sources */,
+				9DA6C20829B27AD90089BA43 /* Frameworks */,
+				9DA6C20929B27AD90089BA43 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Mousike;
+			productName = Mousike;
+			productReference = 9DA6C20B29B27AD90089BA43 /* Mousike.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9DA6C20329B27AD90089BA43 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					9DA6C20A29B27AD90089BA43 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 9DA6C20629B27AD90089BA43 /* Build configuration list for PBXProject "Mousike" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9DA6C20229B27AD90089BA43;
+			productRefGroup = 9DA6C20C29B27AD90089BA43 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9DA6C20A29B27AD90089BA43 /* Mousike */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9DA6C20929B27AD90089BA43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DA6C23529B5C5510089BA43 /* pianoInstrument.sf2 in Resources */,
+				9DA6C21729B27ADA0089BA43 /* Preview Assets.xcassets in Resources */,
+				9DA6C21329B27ADA0089BA43 /* Assets.xcassets in Resources */,
+				9DA6C21F29B286340089BA43 /* Sunny.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9DA6C20729B27AD90089BA43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DA6C23A29B5C9E00089BA43 /* ChordRecognitionMainView.swift in Sources */,
+				9DA6C22E29B3DFE80089BA43 /* SettingsView.swift in Sources */,
+				9DA6C21129B27AD90089BA43 /* MainHomeView.swift in Sources */,
+				9D57DD0929B7EFEA00EA6BD6 /* Interval.swift in Sources */,
+				9DA6C20F29B27AD90089BA43 /* MousikeApp.swift in Sources */,
+				9DA6C22829B2ABF80089BA43 /* ExerciceView.swift in Sources */,
+				9DA6C23029B5C5040089BA43 /* AudioEngine.swift in Sources */,
+				9DA6C23329B5C5320089BA43 /* Notes.swift in Sources */,
+				9D19259129C21E0B0024807D /* AngularGradient+Extensions.swift in Sources */,
+				9DA6C22B29B3DDB70089BA43 /* NoteRecognitionMainView.swift in Sources */,
+				9DA6C22529B2AA780089BA43 /* IntervalTrainingView.swift in Sources */,
+				9DA6C22229B2907A0089BA43 /* IntervalTrainingExercice.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9DA6C21829B27ADA0089BA43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9DA6C21929B27ADA0089BA43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		9DA6C21B29B27ADA0089BA43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Mousike/Mousike.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Mousike/Preview Content\"";
+				DEVELOPMENT_TEAM = PR37X8G2V5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Mousike/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.djallil.dev.Mousike;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9DA6C21C29B27ADA0089BA43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Mousike/Mousike.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Mousike/Preview Content\"";
+				DEVELOPMENT_TEAM = PR37X8G2V5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Mousike/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.djallil.dev.Mousike;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9DA6C20629B27AD90089BA43 /* Build configuration list for PBXProject "Mousike" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DA6C21829B27ADA0089BA43 /* Debug */,
+				9DA6C21929B27ADA0089BA43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DA6C21A29B27ADA0089BA43 /* Build configuration list for PBXNativeTarget "Mousike" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DA6C21B29B27ADA0089BA43 /* Debug */,
+				9DA6C21C29B27ADA0089BA43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9DA6C20329B27AD90089BA43 /* Project object */;
+}
