@@ -15,7 +15,6 @@
 		9DA6C21129B27AD90089BA43 /* MainHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA6C21029B27AD90089BA43 /* MainHomeView.swift */; };
 		9DA6C21329B27ADA0089BA43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DA6C21229B27ADA0089BA43 /* Assets.xcassets */; };
 		9DA6C21729B27ADA0089BA43 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DA6C21629B27ADA0089BA43 /* Preview Assets.xcassets */; };
-		9DA6C21F29B286340089BA43 /* Sunny.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9DA6C21D29B285E90089BA43 /* Sunny.otf */; };
 		9DA6C22229B2907A0089BA43 /* IntervalTrainingExercice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA6C22129B2907A0089BA43 /* IntervalTrainingExercice.swift */; };
 		9DA6C22529B2AA780089BA43 /* IntervalTrainingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA6C22429B2AA780089BA43 /* IntervalTrainingView.swift */; };
 		9DA6C22829B2ABF80089BA43 /* ExerciceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA6C22729B2ABF80089BA43 /* ExerciceView.swift */; };
@@ -31,6 +30,7 @@
 		9D19259029C21E0B0024807D /* AngularGradient+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AngularGradient+Extensions.swift"; sourceTree = "<group>"; };
 		9D19259329C2202F0024807D /* NoteRecognitionButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteRecognitionButtonStyle.swift; sourceTree = "<group>"; };
 		9D19259529C221D50024807D /* NoteRecognitionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteRecognitionViewModel.swift; sourceTree = "<group>"; };
+		9D19259829C22BFC0024807D /* Sunny.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Sunny.otf; sourceTree = "<group>"; };
 		9D57DD0829B7EFEA00EA6BD6 /* Interval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interval.swift; sourceTree = "<group>"; };
 		9DA6C20B29B27AD90089BA43 /* Mousike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mousike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DA6C20E29B27AD90089BA43 /* MousikeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MousikeApp.swift; sourceTree = "<group>"; };
@@ -38,8 +38,7 @@
 		9DA6C21229B27ADA0089BA43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DA6C21429B27ADA0089BA43 /* Mousike.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Mousike.entitlements; sourceTree = "<group>"; };
 		9DA6C21629B27ADA0089BA43 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		9DA6C21D29B285E90089BA43 /* Sunny.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Sunny.otf; path = "../../../Downloads/sunny-spells-font/Sunny.otf"; sourceTree = "<group>"; };
-		9DA6C21E29B286070089BA43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9DA6C21E29B286070089BA43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9DA6C22129B2907A0089BA43 /* IntervalTrainingExercice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalTrainingExercice.swift; sourceTree = "<group>"; };
 		9DA6C22429B2AA780089BA43 /* IntervalTrainingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalTrainingView.swift; sourceTree = "<group>"; };
 		9DA6C22729B2ABF80089BA43 /* ExerciceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciceView.swift; sourceTree = "<group>"; };
@@ -78,6 +77,32 @@
 			path = ButtonStyles;
 			sourceTree = "<group>";
 		};
+		9D19259729C22BF40024807D /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				9DA6C23429B5C5510089BA43 /* pianoInstrument.sf2 */,
+				9DA6C21229B27ADA0089BA43 /* Assets.xcassets */,
+				9D19259829C22BFC0024807D /* Sunny.otf */,
+			);
+			path = Ressources;
+			sourceTree = "<group>";
+		};
+		9D19259929C22C210024807D /* System */ = {
+			isa = PBXGroup;
+			children = (
+				9DA6C20E29B27AD90089BA43 /* MousikeApp.swift */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		9D19259A29C22C400024807D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				9DA6C21029B27AD90089BA43 /* MainHomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		9DA6C20229B27AD90089BA43 = {
 			isa = PBXGroup;
 			children = (
@@ -98,15 +123,11 @@
 			isa = PBXGroup;
 			children = (
 				9DA6C21E29B286070089BA43 /* Info.plist */,
-				9DA6C23429B5C5510089BA43 /* pianoInstrument.sf2 */,
-				9DA6C20E29B27AD90089BA43 /* MousikeApp.swift */,
-				9DA6C21029B27AD90089BA43 /* MainHomeView.swift */,
+				9DA6C21429B27ADA0089BA43 /* Mousike.entitlements */,
+				9D19259929C22C210024807D /* System */,
 				9DA6C23629B5C5BA0089BA43 /* Shared */,
 				9DA6C23129B5C5110089BA43 /* Services */,
 				9DA6C22329B2AA680089BA43 /* Features */,
-				9DA6C21229B27ADA0089BA43 /* Assets.xcassets */,
-				9DA6C21D29B285E90089BA43 /* Sunny.otf */,
-				9DA6C21429B27ADA0089BA43 /* Mousike.entitlements */,
 				9DA6C21529B27ADA0089BA43 /* Preview Content */,
 			);
 			path = Mousike;
@@ -123,6 +144,7 @@
 		9DA6C22329B2AA680089BA43 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				9D19259A29C22C400024807D /* Home */,
 				9DA6C23829B5C9C90089BA43 /* ChordRecognition */,
 				9DA6C22C29B3DFDB0089BA43 /* Settings */,
 				9DA6C22929B3DD9A0089BA43 /* NoteRecognition */,
@@ -169,6 +191,7 @@
 		9DA6C23629B5C5BA0089BA43 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				9D19259729C22BF40024807D /* Ressources */,
 				9D19259229C2201C0024807D /* ButtonStyles */,
 				9D19258F29C21DF70024807D /* Extensions */,
 				9DA6C23729B5C5C70089BA43 /* Model */,
@@ -254,7 +277,6 @@
 				9DA6C23529B5C5510089BA43 /* pianoInstrument.sf2 in Resources */,
 				9DA6C21729B27ADA0089BA43 /* Preview Assets.xcassets in Resources */,
 				9DA6C21329B27ADA0089BA43 /* Assets.xcassets in Resources */,
-				9DA6C21F29B286340089BA43 /* Sunny.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
