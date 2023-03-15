@@ -18,30 +18,33 @@ struct NoteRecognitionMainView: View {
                 Button(action: {
                     viewModel.playNote(viewModel.correctNote)
                 }) {
-                    HStack(spacing: 40) {
-                        Spacer()
-                        VStack {
-                            Image(systemName: "arrow.triangle.2.circlepath.circle.fill")
-                                .resizable()
-                                .frame(width: 80, height: 80)
-                                .aspectRatio(contentMode: .fit)
-                                .foregroundStyle(AngularGradient.defaultGradient)
-                            Text("Replay")
-                                .font(.caption)
-                                .bold()
-                                .foregroundStyle(AngularGradient.defaultGradient)
+                    VStack {
+                        HStack(spacing: 40) {
+                            Spacer()
+                            VStack {
+                                Image(systemName: "arrow.triangle.2.circlepath.circle.fill")
+                                    .resizable()
+                                    .frame(width: 80, height: 80)
+                                    .aspectRatio(contentMode: .fit)
+                                    .foregroundStyle(AngularGradient.defaultGradient)
+                                Text("Replay")
+                                    .font(.caption)
+                                    .bold()
+                                    .foregroundStyle(AngularGradient.defaultGradient)
+                            }
+                            .padding()
+                            .clipShape(Capsule())
+                            Spacer()
                         }
-                        .padding()
-                        .clipShape(Capsule())
-                        Spacer()
+                        Text("Question: Guess the note")
+                            .font(.headline)
+                            .foregroundColor(.white)
+                            .padding(.bottom)
                     }
                 }
                 .buttonStyle(NoteRecognitionButtonStyle())
-                .frame(height: 120)
                 .padding(.horizontal)
-                Text("Question: Guess the note")
-                    .font(.headline)
-                    .padding()
+                .frame(minHeight: 180, maxHeight: 220)
                 LazyVGrid(columns: rows, spacing: 15) {
                     ForEach(viewModel.answerNotes) { note in
                         Button(action: {
@@ -59,8 +62,8 @@ struct NoteRecognitionMainView: View {
                                 }
                             }
                         }.padding()
-                        .background(handleNoteBackground(note: note))
-                        .clipShape(Capsule())
+                            .background(handleNoteBackground(note: note))
+                            .clipShape(Capsule())
                     }
                     .disabled(viewModel.didAnswer)
                 }
@@ -81,9 +84,6 @@ struct NoteRecognitionMainView: View {
                     }
                     .buttonStyle(.plain)
                 }
-            }
-            .onAppear {
-                viewModel.engine.start()
             }
         }
     }
@@ -114,6 +114,9 @@ struct NoteRecognitionMainView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
             NoteRecognitionMainView()
+                .onAppear {
+                    AudioEngine.shared.start()
+                }
         }
     }
 }

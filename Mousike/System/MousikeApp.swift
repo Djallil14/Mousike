@@ -13,6 +13,9 @@ struct MousikeApp: App {
         WindowGroup {
             NavigationStack {
                 MainHomeView()
+                    .onAppear {
+                        AudioEngine.shared.start()
+                    }
             }
         }
     }

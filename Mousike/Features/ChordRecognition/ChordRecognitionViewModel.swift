@@ -1,5 +1,5 @@
 //
-//  NoteRecognitionViewModel.swift
+//  ChordRecognitionViewModel.swift
 //  Mousike
 //
 //  Created by Djallil Elkebir on 2023-03-15.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-class NoteRecognitionViewModel: ObservableObject {
+class ChordRecognitionViewModel: ObservableObject {
     @Published var answerNotes: [Note] = []
     @Published var correctNote: Note
     @Published var didAnswer: Bool = false
@@ -17,7 +17,7 @@ class NoteRecognitionViewModel: ObservableObject {
     let engine = AudioEngine.shared
     
     init() {
-        correctNote = Note.beginnersNotes.randomElement()!
+        correctNote = Note.randomChords.randomElement()!
         generateFirstQuestion()
     }
     
@@ -25,7 +25,7 @@ class NoteRecognitionViewModel: ObservableObject {
         var proposedNotes: [Note] = []
         proposedNotes.append(correctNote)
         while proposedNotes.count < 6 {
-            if let randomNote = Note.beginnersNotes.randomElement(), !proposedNotes.contains(randomNote) {
+            if let randomNote = Note.randomChords.randomElement(), !proposedNotes.contains(randomNote) {
                 proposedNotes.append(randomNote)
             }
         }
@@ -34,7 +34,7 @@ class NoteRecognitionViewModel: ObservableObject {
     }
     
     private func generateNextQuestion() {
-        correctNote = Note.beginnersNotes.randomElement()!
+        correctNote = Note.randomChords.randomElement()!
         withAnimation {
             didAnswer = false
             selectedNote = nil
@@ -42,7 +42,7 @@ class NoteRecognitionViewModel: ObservableObject {
         var proposedNotes: [Note] = []
         proposedNotes.append(correctNote)
         while proposedNotes.count < 6 {
-            if let randomNote = Note.beginnersNotes.randomElement(), !proposedNotes.contains(randomNote) {
+            if let randomNote = Note.randomChords.randomElement(), !proposedNotes.contains(randomNote) {
                 proposedNotes.append(randomNote)
             }
         }
@@ -97,3 +97,4 @@ class NoteRecognitionViewModel: ObservableObject {
         }
     }
 }
+

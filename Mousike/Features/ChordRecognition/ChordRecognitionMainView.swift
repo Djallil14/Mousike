@@ -9,62 +9,61 @@ import SwiftUI
 
 struct ChordRecognitionMainView: View {
     @Environment(\.dismiss) var dismiss
-    let engine = AudioEngine.shared
+    @StateObject var viewModel = ChordRecognitionViewModel()
     let rows = [GridItem(.flexible()), GridItem(.flexible())]
     var body: some View {
         VStack {
-            Button(action: {}) {
-                HStack(spacing: 40) {
-                    Spacer()
-                    VStack {
-                        Image(systemName: "arrow.triangle.2.circlepath.circle.fill")
-                            .resizable()
-                            .frame(width: 80, height: 80)
-                            .aspectRatio(contentMode: .fit)
-                            .foregroundStyle(AngularGradient.blueGradient)
-                        Text("Replay")
-                            .font(.caption)
-                            .bold()
-                            .foregroundStyle(AngularGradient.blueGradient)
+            Button(action: {
+                viewModel.playNote(viewModel.correctNote)
+            }) {
+                VStack {
+                    HStack(spacing: 40) {
+                        Spacer()
+                        VStack {
+                            Image(systemName: "arrow.triangle.2.circlepath.circle.fill")
+                                .resizable()
+                                .frame(width: 80, height: 80)
+                                .aspectRatio(contentMode: .fit)
+                                .foregroundStyle(AngularGradient.defaultGradient)
+                            Text("Replay")
+                                .font(.caption)
+                                .bold()
+                                .foregroundStyle(AngularGradient.defaultGradient)
+                        }
+                        .padding()
+                        .clipShape(Capsule())
+                        Spacer()
                     }
-                    .padding()
-                    .background(Color.white.blendMode(.overlay))
-                    .clipShape(Capsule())
-                    Spacer()
-                }
-                .padding(.vertical, 8)
-                .background {
-                    Capsule()
-                        .fill(AngularGradient.defaultGradient)
+                    Text("Question: Guess the Chord")
+                        .font(.headline)
+                        .foregroundColor(.white)
+                        .padding(.bottom)
                 }
             }
-            .buttonStyle(.plain)
-            .frame(height: 120)
+            .buttonStyle(NoteRecognitionButtonStyle())
             .padding(.horizontal)
-            Text("Question: Guess the Chord")
-                .font(.headline)
-                .padding()
+            .frame(minHeight: 180, maxHeight: 220)
             LazyVGrid(columns: rows, spacing: 15) {
-                ForEach(Note.randomChords.shuffled().prefix(6)) { note in
+                ForEach(viewModel.answerNotes) { note in
                     Button(action: {
-                        playNote(note)
+                        viewModel.checkAnswer(note)
                     }) {
                         VStack {
-                            if let image = note.chordImage {
-                                Image(uiImage: image)
-                                    .resizable()
-                                    .frame(width: 100, height: 50)
-                                    .padding()
-                            }
                             Text(note.name)
                                 .font(.headline)
                                 .foregroundColor(.white)
+                            if let image = note.pianoImage {
+                                Image(uiImage: image)
+                                    .resizable()
+                                    .frame(width: 80, height: 40)
+                                    .padding()
+                            }
                         }
-                    }
-                    .padding()
-                    .background(AngularGradient.defaultGradient)
+                    }.padding()
+                    .background(handleNoteBackground(note: note))
                     .clipShape(Capsule())
                 }
+                .disabled(viewModel.didAnswer)
             }
             .padding()
         }
@@ -84,36 +83,26 @@ struct ChordRecognitionMainView: View {
                 .buttonStyle(.plain)
             }
         }
-        .onAppear {
-            engine.start()
-        }
     }
     
-    private func playNote(_ note: Note) {
-        switch note.chord {
-        case .none:
-            engine.sampler.startNote(UInt8(note.octave), withVelocity: 64, onChannel: 0)
-            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-                self.engine.sampler.stopNote(UInt8(note.octave), onChannel: 0)
+    @ViewBuilder
+    private func handleNoteBackground(note: Note) -> some View {
+        if viewModel.didAnswer {
+            if viewModel.showAnswer {
+                if note == viewModel.correctNote {
+                    AngularGradient.greenGradient
+                } else {
+                    AngularGradient.redGradient
+                }
+            } else {
+                if note == viewModel.selectedNote {
+                    AngularGradient.purpleGradient
+                } else {
+                    AngularGradient.blueGradient
+                }
             }
-        case .major:
-            engine.sampler.startNote(UInt8(note.octave), withVelocity: 64, onChannel: 0)
-            engine.sampler.startNote(note.majorChordSecondNote, withVelocity: 64, onChannel: 1)
-            engine.sampler.startNote(note.majorChordThirdNote, withVelocity: 64, onChannel: 2)
-            DispatchQueue.main.asyncAfter(deadline: .now() + 3) { [self] in
-                self.engine.sampler.stopNote(UInt8(note.octave), onChannel: 0)
-                self.engine.sampler.stopNote(note.majorChordSecondNote, onChannel: 1)
-                self.engine.sampler.stopNote(note.majorChordThirdNote, onChannel: 2)
-            }
-        case .minor:
-            engine.sampler.startNote(UInt8(note.octave), withVelocity: 64, onChannel: 0)
-            engine.sampler.startNote(note.minorChordSecondNote, withVelocity: 64, onChannel: 1)
-            engine.sampler.startNote(note.minorChordThirdNote, withVelocity: 64, onChannel: 2)
-            DispatchQueue.main.asyncAfter(deadline: .now() + 3) { [self] in
-                self.engine.sampler.stopNote(UInt8(note.octave), onChannel: 0)
-                self.engine.sampler.stopNote(note.minorChordSecondNote, onChannel: 1)
-                self.engine.sampler.stopNote(note.minorChordThirdNote, onChannel: 2)
-            }
+        } else {
+            AngularGradient.blueGradient
         }
     }
 }
@@ -121,5 +110,8 @@ struct ChordRecognitionMainView: View {
 struct ChordRecognitionMainView_Previews: PreviewProvider {
     static var previews: some View {
         ChordRecognitionMainView()
+            .onAppear {
+                AudioEngine.shared.start()
+            }
     }
 }

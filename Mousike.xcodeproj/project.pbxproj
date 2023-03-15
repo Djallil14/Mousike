@@ -10,6 +10,7 @@
 		9D19259129C21E0B0024807D /* AngularGradient+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D19259029C21E0B0024807D /* AngularGradient+Extensions.swift */; };
 		9D19259429C2202F0024807D /* NoteRecognitionButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D19259329C2202F0024807D /* NoteRecognitionButtonStyle.swift */; };
 		9D19259629C221D50024807D /* NoteRecognitionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D19259529C221D50024807D /* NoteRecognitionViewModel.swift */; };
+		9D19259C29C22F790024807D /* ChordRecognitionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D19259B29C22F790024807D /* ChordRecognitionViewModel.swift */; };
 		9D57DD0929B7EFEA00EA6BD6 /* Interval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D57DD0829B7EFEA00EA6BD6 /* Interval.swift */; };
 		9DA6C20F29B27AD90089BA43 /* MousikeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA6C20E29B27AD90089BA43 /* MousikeApp.swift */; };
 		9DA6C21129B27AD90089BA43 /* MainHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA6C21029B27AD90089BA43 /* MainHomeView.swift */; };
@@ -31,6 +32,7 @@
 		9D19259329C2202F0024807D /* NoteRecognitionButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteRecognitionButtonStyle.swift; sourceTree = "<group>"; };
 		9D19259529C221D50024807D /* NoteRecognitionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteRecognitionViewModel.swift; sourceTree = "<group>"; };
 		9D19259829C22BFC0024807D /* Sunny.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Sunny.otf; sourceTree = "<group>"; };
+		9D19259B29C22F790024807D /* ChordRecognitionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChordRecognitionViewModel.swift; sourceTree = "<group>"; };
 		9D57DD0829B7EFEA00EA6BD6 /* Interval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interval.swift; sourceTree = "<group>"; };
 		9DA6C20B29B27AD90089BA43 /* Mousike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mousike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DA6C20E29B27AD90089BA43 /* MousikeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MousikeApp.swift; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				9DA6C23929B5C9E00089BA43 /* ChordRecognitionMainView.swift */,
+				9D19259B29C22F790024807D /* ChordRecognitionViewModel.swift */,
 			);
 			path = ChordRecognition;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 				9DA6C21129B27AD90089BA43 /* MainHomeView.swift in Sources */,
 				9D57DD0929B7EFEA00EA6BD6 /* Interval.swift in Sources */,
 				9D19259629C221D50024807D /* NoteRecognitionViewModel.swift in Sources */,
+				9D19259C29C22F790024807D /* ChordRecognitionViewModel.swift in Sources */,
 				9DA6C20F29B27AD90089BA43 /* MousikeApp.swift in Sources */,
 				9DA6C22829B2ABF80089BA43 /* ExerciceView.swift in Sources */,
 				9D19259429C2202F0024807D /* NoteRecognitionButtonStyle.swift in Sources */,
