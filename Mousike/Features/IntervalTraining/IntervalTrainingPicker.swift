@@ -6,23 +6,9 @@
 //
 
 import SwiftUI
-
-struct IntervalTrainingExercice: View {
-    @State var interval: Interval = .majorSixth
-    var body: some View {
-        IntervalTrainingPicker(selectedInterval: $interval)
-    }
-}
-
-struct IntervalTrainingExercice_Previews: PreviewProvider {
-    static var previews: some View {
-        IntervalTrainingExercice()
-    }
-}
-
 struct IntervalTrainingPicker: View {
+    @ObservedObject var viewModel: IntervalTrainingViewModel
     let invervals = Interval.allCases
-    @Binding var selectedInterval: Interval
     let rows = [GridItem(.flexible())]
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
@@ -30,11 +16,12 @@ struct IntervalTrainingPicker: View {
                 ForEach(invervals) { interval in
                     Button(action: {
                         withAnimation {
-                            selectedInterval = interval
+                            viewModel.currentInterval = interval
                         }
+                        viewModel.generateNextQuestion()
                     }) {
                         ZStack {
-                            if selectedInterval == interval {
+                            if viewModel.currentInterval == interval {
                                 Capsule()
                                     .fill(AngularGradient.blueGradient)
                             } else {
@@ -44,7 +31,7 @@ struct IntervalTrainingPicker: View {
                             }
                             Text(interval.title)
                                 .font(.headline)
-                                .foregroundStyle(selectedInterval == interval ? AngularGradient(colors: [.white], center: .center) : AngularGradient.blueGradient)
+                                .foregroundStyle(viewModel.currentInterval == interval ? AngularGradient(colors: [.white], center: .center) : AngularGradient.blueGradient)
                                 .padding(.horizontal)
                                 .padding(.vertical, 8)
                         }
@@ -56,3 +43,8 @@ struct IntervalTrainingPicker: View {
     }
 }
 
+struct IntervalTrainingExercice_Previews: PreviewProvider {
+    static var previews: some View {
+        IntervalTrainingPicker(viewModel: .init())
+    }
+}
