@@ -8,16 +8,16 @@
 import SwiftUI
 
 struct IntervalTrainingView: View {
-    @State var selectedInterval: Interval = .majorSixth
+    @StateObject var viewModel = IntervalTrainingViewModel()
     @Environment(\.dismiss) var dismiss
     var body: some View {
         ZStack {
             LinearGradient(colors: [.blue.opacity(0.5), .cyan.opacity(0.5), .white, .white], startPoint: .bottom, endPoint: .top).edgesIgnoringSafeArea(.all)
             VStack {
-                IntervalTrainingPicker(selectedInterval: $selectedInterval)
+                IntervalTrainingPicker(viewModel: viewModel)
                     .frame(height: 60)
                     .padding(.bottom)
-                ExerciceView(interval: selectedInterval)
+                ExerciceView(viewModel: viewModel, interval: viewModel.currentInterval)
                 Spacer()
             }
             .navigationBarBackButtonHidden()

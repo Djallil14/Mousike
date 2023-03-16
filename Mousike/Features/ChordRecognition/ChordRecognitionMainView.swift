@@ -12,76 +12,79 @@ struct ChordRecognitionMainView: View {
     @StateObject var viewModel = ChordRecognitionViewModel()
     let rows = [GridItem(.flexible()), GridItem(.flexible())]
     var body: some View {
-        VStack {
-            Button(action: {
-                viewModel.playNote(viewModel.correctNote)
-            }) {
-                VStack {
-                    HStack(spacing: 40) {
-                        Spacer()
-                        VStack {
-                            Image(systemName: "arrow.triangle.2.circlepath.circle.fill")
-                                .resizable()
-                                .frame(width: 80, height: 80)
-                                .aspectRatio(contentMode: .fit)
-                                .foregroundStyle(AngularGradient.defaultGradient)
-                            Text("Replay")
-                                .font(.caption)
-                                .bold()
-                                .foregroundStyle(AngularGradient.defaultGradient)
-                        }
-                        .padding()
-                        .clipShape(Capsule())
-                        Spacer()
-                    }
-                    Text("Question: Guess the Chord")
-                        .font(.headline)
-                        .foregroundColor(.white)
-                        .padding(.bottom)
-                }
-            }
-            .buttonStyle(NoteRecognitionButtonStyle())
-            .padding(.horizontal)
-            .frame(minHeight: 180, maxHeight: 220)
-            LazyVGrid(columns: rows, spacing: 15) {
-                ForEach(viewModel.answerNotes) { note in
-                    Button(action: {
-                        viewModel.checkAnswer(note)
-                    }) {
-                        VStack {
-                            Text(note.name)
-                                .font(.headline)
-                                .foregroundColor(.white)
-                            if let image = note.pianoImage {
-                                Image(uiImage: image)
+        ZStack {
+            LinearGradient(colors: [.blue.opacity(0.5), .cyan.opacity(0.5), .white, .white], startPoint: .bottom, endPoint: .top).edgesIgnoringSafeArea(.all)
+            VStack {
+                Button(action: {
+                    viewModel.playNote(viewModel.correctNote)
+                }) {
+                    VStack {
+                        HStack(spacing: 40) {
+                            Spacer()
+                            VStack {
+                                Image(systemName: "arrow.triangle.2.circlepath.circle.fill")
                                     .resizable()
-                                    .frame(width: 80, height: 40)
-                                    .padding()
+                                    .frame(width: 80, height: 80)
+                                    .aspectRatio(contentMode: .fit)
+                                    .foregroundStyle(AngularGradient.defaultGradient)
+                                Text("Replay")
+                                    .font(.caption)
+                                    .bold()
+                                    .foregroundStyle(AngularGradient.defaultGradient)
                             }
+                            .padding()
+                            .clipShape(Capsule())
+                            Spacer()
                         }
-                    }.padding()
-                    .background(handleNoteBackground(note: note))
-                    .clipShape(Capsule())
+                        Text("Question: Guess the Chord")
+                            .font(.headline)
+                            .foregroundColor(.white)
+                            .padding(.bottom)
+                    }
                 }
-                .disabled(viewModel.didAnswer)
+                .buttonStyle(NoteRecognitionButtonStyle())
+                .padding(.horizontal)
+                .frame(minHeight: 180, maxHeight: 220)
+                LazyVGrid(columns: rows, spacing: 15) {
+                    ForEach(viewModel.answerNotes) { note in
+                        Button(action: {
+                            viewModel.checkAnswer(note)
+                        }) {
+                            VStack {
+                                Text(note.name)
+                                    .font(.headline)
+                                    .foregroundColor(.white)
+                                if let image = note.pianoImage {
+                                    Image(uiImage: image)
+                                        .resizable()
+                                        .frame(width: 80, height: 40)
+                                        .padding()
+                                }
+                            }
+                        }.padding()
+                        .background(handleNoteBackground(note: note))
+                        .clipShape(Capsule())
+                    }
+                    .disabled(viewModel.didAnswer)
+                }
+                .padding()
             }
-            .padding()
+            .navigationTitle("Note Recognition")
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationBarBackButtonHidden()
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button(action:{dismiss()}) {
+                        Image(systemName: "arrow.left")
+                            .font(.headline)
+                            .padding(8)
+                            .foregroundColor(.white)
+                            .background(AngularGradient.blueGradient)
+                            .clipShape(Circle())
+                    }
+                    .buttonStyle(.plain)
+                }
         }
-        .navigationTitle("Note Recognition")
-        .navigationBarTitleDisplayMode(.inline)
-        .navigationBarBackButtonHidden()
-        .toolbar {
-            ToolbarItem(placement: .navigationBarLeading) {
-                Button(action:{dismiss()}) {
-                    Image(systemName: "arrow.left")
-                        .font(.headline)
-                        .padding(8)
-                        .foregroundColor(.white)
-                        .background(AngularGradient.blueGradient)
-                        .clipShape(Circle())
-                }
-                .buttonStyle(.plain)
-            }
         }
     }
     
