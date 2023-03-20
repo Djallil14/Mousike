@@ -14,7 +14,9 @@ struct MousikeApp: App {
             NavigationStack {
                 MainHomeView()
                     .onAppear {
-                        AudioEngine.shared.start()
+                        if !AudioEngine.shared.engine.isRunning {
+                            AudioEngine.shared.start()
+                        }
                     }
             }
         }

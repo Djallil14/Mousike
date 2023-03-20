@@ -10,7 +10,7 @@ import SwiftUI
 struct MainHomeView: View {
     var body: some View {
         ZStack {
-            LinearGradient(colors: [.blue, .cyan, .blue.opacity(0.5), .cyan.opacity(0.5), .white, .white], startPoint: .bottom, endPoint: .top).edgesIgnoringSafeArea(.all)
+            Color.customBackground.edgesIgnoringSafeArea(.all)
             ScrollView {
                 VStack(spacing: 20) {
                     Spacer(minLength: 100)
@@ -47,7 +47,7 @@ struct MainHomeView: View {
                                 .foregroundStyle(.white)
                                 .padding(12)
                                 .background {
-                                    AngularGradient.blueGradient
+                                    Color.accentColor
                                 }
                                 .clipShape(Circle())
                                 .frame(width: 44, height: 44)
@@ -73,7 +73,7 @@ struct MenuButtonLabel: View {
     var body: some View {
         ZStack {
             Capsule()
-                .fill(AngularGradient.defaultGradient)
+                .fill(Color.white)
                 .frame(height: 80)
                 .overlay {
                     HStack {
@@ -82,7 +82,7 @@ struct MenuButtonLabel: View {
                             .foregroundColor(.white)
                             .bold()
                             .padding()
-                            .background(AngularGradient.blueGradient)
+                            .background(Color.accentColor)
                             .clipShape(Circle())
                         Spacer()
                         Text(label)

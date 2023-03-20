@@ -12,7 +12,8 @@ struct IntervalTrainingView: View {
     @Environment(\.dismiss) var dismiss
     var body: some View {
         ZStack {
-            LinearGradient(colors: [.blue.opacity(0.5), .cyan.opacity(0.5), .white, .white], startPoint: .bottom, endPoint: .top).edgesIgnoringSafeArea(.all)
+            Color.customBackground.edgesIgnoringSafeArea(.all)
+
             VStack {
                 IntervalTrainingPicker(viewModel: viewModel)
                     .frame(height: 60)

@@ -13,7 +13,7 @@ struct NoteRecognitionMainView: View {
     let rows = [GridItem(.flexible()), GridItem(.flexible())]
     var body: some View {
         ZStack {
-            LinearGradient(colors: [.blue.opacity(0.5), .cyan.opacity(0.5), .white, .white], startPoint: .bottom, endPoint: .top).edgesIgnoringSafeArea(.all)
+            Color.customBackground.edgesIgnoringSafeArea(.all)
             VStack {
                 Button(action: {
                     viewModel.playNote(viewModel.correctNote)
@@ -26,7 +26,7 @@ struct NoteRecognitionMainView: View {
                                     .resizable()
                                     .frame(width: 80, height: 80)
                                     .aspectRatio(contentMode: .fit)
-                                    .foregroundStyle(AngularGradient.defaultGradient)
+                                    .foregroundStyle(.white)
                                 Text("Replay")
                                     .font(.caption)
                                     .bold()

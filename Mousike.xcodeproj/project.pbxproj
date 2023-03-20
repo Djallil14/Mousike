@@ -13,6 +13,7 @@
 		9D19259C29C22F790024807D /* ChordRecognitionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D19259B29C22F790024807D /* ChordRecognitionViewModel.swift */; };
 		9D19259E29C36FE10024807D /* IntervalTrainingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D19259D29C36FE10024807D /* IntervalTrainingViewModel.swift */; };
 		9D57DD0929B7EFEA00EA6BD6 /* Interval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D57DD0829B7EFEA00EA6BD6 /* Interval.swift */; };
+		9D93D66A29C810940054BC82 /* Extension+Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D93D66929C810940054BC82 /* Extension+Colors.swift */; };
 		9DA6C20F29B27AD90089BA43 /* MousikeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA6C20E29B27AD90089BA43 /* MousikeApp.swift */; };
 		9DA6C21129B27AD90089BA43 /* MainHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA6C21029B27AD90089BA43 /* MainHomeView.swift */; };
 		9DA6C21329B27ADA0089BA43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DA6C21229B27ADA0089BA43 /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 		9D19259B29C22F790024807D /* ChordRecognitionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChordRecognitionViewModel.swift; sourceTree = "<group>"; };
 		9D19259D29C36FE10024807D /* IntervalTrainingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalTrainingViewModel.swift; sourceTree = "<group>"; };
 		9D57DD0829B7EFEA00EA6BD6 /* Interval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interval.swift; sourceTree = "<group>"; };
+		9D93D66929C810940054BC82 /* Extension+Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Colors.swift"; sourceTree = "<group>"; };
 		9DA6C20B29B27AD90089BA43 /* Mousike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mousike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DA6C20E29B27AD90089BA43 /* MousikeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MousikeApp.swift; sourceTree = "<group>"; };
 		9DA6C21029B27AD90089BA43 /* MainHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHomeView.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				9D19259029C21E0B0024807D /* AngularGradient+Extensions.swift */,
+				9D93D66929C810940054BC82 /* Extension+Colors.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 				9DA6C22829B2ABF80089BA43 /* ExerciceView.swift in Sources */,
 				9D19259429C2202F0024807D /* NoteRecognitionButtonStyle.swift in Sources */,
 				9DA6C23029B5C5040089BA43 /* AudioEngine.swift in Sources */,
+				9D93D66A29C810940054BC82 /* Extension+Colors.swift in Sources */,
 				9DA6C23329B5C5320089BA43 /* Notes.swift in Sources */,
 				9D19259129C21E0B0024807D /* AngularGradient+Extensions.swift in Sources */,
 				9DA6C22B29B3DDB70089BA43 /* NoteRecognitionMainView.swift in Sources */,

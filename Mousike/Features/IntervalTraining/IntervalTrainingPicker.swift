@@ -27,7 +27,8 @@ struct IntervalTrainingPicker: View {
                             } else {
                                 Capsule()
                                     .stroke(lineWidth: 2)
-                                    .fill(AngularGradient(colors: [.blue, .blue,.blue.opacity(0.5), .blue, .purple], center: .center))
+                                    .fill(Color.accentColor)
+                                    .background(Color.white.clipShape(Capsule()))
                             }
                             Text(interval.title)
                                 .font(.headline)
